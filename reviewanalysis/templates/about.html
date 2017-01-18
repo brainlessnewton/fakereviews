@@ -1,67 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-
-    <title>SOLID - Bootstrap 3 Theme</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script src="assets/js/modernizr.js"></script>
-  </head>
-
-  <body>
-
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">SOLID.</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li class="active"><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="single-post.html">SINGLE POST</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="single-project.html">SINGLE PROJECT</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+{% include "header.html" %}
 
 	<!-- *****************************************************************************************************************
 	 BLUE WRAP
@@ -82,7 +19,7 @@
 	 <div class="container mtb">
 	 	<div class="row">
 	 		<div class="col-lg-6">
-	 			<img class="img-responsive" src="assets/img/agency.jpg" alt="">
+	 			<img class="img-responsive" src="/static/img/agency.jpg" alt="">
 	 		</div>
 	 		
 	 		<div class="col-lg-6">
@@ -105,7 +42,7 @@
 		 	
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team01.jpg" alt="">
+				<img src="/static/img/team/team01.jpg" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
@@ -122,7 +59,7 @@
 
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team02.jpg" alt="">
+				<img src="/static/img/team/team02.jpg" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
@@ -139,7 +76,7 @@
 
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team03.jpg" alt="">
+				<img src="/static/img/team/team03.jpg" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
@@ -156,7 +93,7 @@
 
 		 	<div class="col-lg-3 col-md-3 col-sm-3">
 				<div class="he-wrap tpl6">
-				<img src="assets/img/team/team04.jpg" alt="">
+				<img src="/static/img/team/team04.jpg" alt="">
 					<div class="he-view">
 						<div class="bg a0" data-animate="fadeIn">
                             <h3 class="a1" data-animate="fadeInDown">Contact Me:</h3>
@@ -198,16 +135,16 @@
 		 	<div class="row centered">
 			 	<h3>OUR CLIENTS</h3>
 			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src="assets/img/clients/client01.png" class="img-responsive">
+			 		<img src="/static/img/clients/client01.png" class="img-responsive">
 			 	</div>
 			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src="assets/img/clients/client02.png" class="img-responsive">
+			 		<img src="/static/img/clients/client02.png" class="img-responsive">
 			 	</div>
 			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src="assets/img/clients/client03.png" class="img-responsive">
+			 		<img src="/static/img/clients/client03.png" class="img-responsive">
 			 	</div>
 			 	<div class="col-lg-3 col-md-3 col-sm-3">
-			 		<img src="assets/img/clients/client04.png" class="img-responsive">
+			 		<img src="/static/img/clients/client04.png" class="img-responsive">
 			 	</div>
 		 	</div><! --/row -->
 		 </div><! --/container -->
@@ -253,13 +190,13 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/retina-1.1.0.js"></script>
-	<script src="assets/js/jquery.hoverdir.js"></script>
-	<script src="assets/js/jquery.hoverex.min.js"></script>
-	<script src="assets/js/jquery.prettyPhoto.js"></script>
-  	<script src="assets/js/jquery.isotope.min.js"></script>
-  	<script src="assets/js/custom.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/retina-1.1.0.js"></script>
+	<script src="/static/js/jquery.hoverdir.js"></script>
+	<script src="/static/js/jquery.hoverex.min.js"></script>
+	<script src="/static/js/jquery.prettyPhoto.js"></script>
+  	<script src="/static/js/jquery.isotope.min.js"></script>
+  	<script src="/static/js/custom.js"></script>
 
 
   </body>
